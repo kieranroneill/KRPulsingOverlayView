@@ -31,7 +31,7 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="onButtonPress:" destination="-1" eventType="touchUpInside" id="Dua-Rh-4xq"/>
+                        <action selector="onPulseButtonPress:" destination="-1" eventType="touchUpInside" id="N9Z-gd-Bgs"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuj-nC-0ne">
@@ -52,11 +52,20 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" borderStyle="roundedRect" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-GQ-ytA">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5.0" borderStyle="roundedRect" placeholder="0.0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-GQ-ytA">
                     <rect key="frame" x="104" y="111" width="409" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaG-0a-zX1">
+                    <rect key="frame" x="8" y="187" width="584" height="30"/>
+                    <state key="normal" title="Start Pulsing with an alert!">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onPulseAlertButtonPress:" destination="-1" eventType="touchUpInside" id="1Sq-RR-mu1"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -65,6 +74,8 @@
                 <constraint firstItem="fuj-nC-0ne" firstAttribute="baseline" secondItem="yi0-Ig-gDx" secondAttribute="baseline" id="AXQ-Jl-kSs"/>
                 <constraint firstItem="5yU-c1-SUw" firstAttribute="leading" secondItem="fuj-nC-0ne" secondAttribute="leading" id="Csg-1Q-eZj"/>
                 <constraint firstItem="5yU-c1-SUw" firstAttribute="top" secondItem="BRj-Qn-dnC" secondAttribute="topMargin" id="Hwm-Qs-npc"/>
+                <constraint firstItem="oaG-0a-zX1" firstAttribute="trailing" secondItem="9hr-oP-vst" secondAttribute="trailing" id="Kbv-ve-aHh"/>
+                <constraint firstItem="oaG-0a-zX1" firstAttribute="leading" secondItem="9hr-oP-vst" secondAttribute="leading" id="PrT-qR-4WE"/>
                 <constraint firstItem="yi0-Ig-gDx" firstAttribute="leading" secondItem="mmC-GQ-ytA" secondAttribute="trailing" constant="8" symbolic="YES" id="V0B-wW-chW"/>
                 <constraint firstItem="yi0-Ig-gDx" firstAttribute="trailing" secondItem="9hr-oP-vst" secondAttribute="trailing" id="VJA-xF-8mU"/>
                 <constraint firstItem="5yU-c1-SUw" firstAttribute="trailing" secondItem="yi0-Ig-gDx" secondAttribute="trailing" id="Wzf-oG-Kxj"/>
@@ -73,6 +84,7 @@
                 <constraint firstItem="5yU-c1-SUw" firstAttribute="trailing" secondItem="BRj-Qn-dnC" secondAttribute="trailingMargin" id="cyE-Xf-1EK"/>
                 <constraint firstItem="fuj-nC-0ne" firstAttribute="top" secondItem="5yU-c1-SUw" secondAttribute="bottom" constant="12" id="fzb-fx-jkx"/>
                 <constraint firstItem="mmC-GQ-ytA" firstAttribute="top" secondItem="5yU-c1-SUw" secondAttribute="bottom" constant="8" symbolic="YES" id="gsS-JV-2LP"/>
+                <constraint firstItem="oaG-0a-zX1" firstAttribute="top" secondItem="9hr-oP-vst" secondAttribute="bottom" constant="8" symbolic="YES" id="jT0-6d-xBv"/>
             </constraints>
             <point key="canvasLocation" x="23" y="419"/>
         </view>

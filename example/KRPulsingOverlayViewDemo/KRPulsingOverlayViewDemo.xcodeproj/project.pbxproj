@@ -82,14 +82,14 @@
 		CE4035ED1A5DC14E0084C9DC /* KRPulsingOverlayViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CE4036191A5DC1F90084C9DC /* KRPulsingOverlayView */,
 				CE4035F21A5DC14E0084C9DC /* AppDelegate.h */,
 				CE4035F31A5DC14E0084C9DC /* AppDelegate.m */,
 				CE4035FB1A5DC14E0084C9DC /* Images.xcassets */,
-				CE4035EE1A5DC14E0084C9DC /* Supporting Files */,
+				CE4036191A5DC1F90084C9DC /* KRPulsingOverlayView */,
 				CE4036141A5DC1A30084C9DC /* KRPulsingOverlayViewController.h */,
 				CE4036151A5DC1A30084C9DC /* KRPulsingOverlayViewController.m */,
 				CE4036161A5DC1A30084C9DC /* KRPulsingOverlayViewController.xib */,
+				CE4035EE1A5DC14E0084C9DC /* Supporting Files */,
 			);
 			path = KRPulsingOverlayViewDemo;
 			sourceTree = "<group>";

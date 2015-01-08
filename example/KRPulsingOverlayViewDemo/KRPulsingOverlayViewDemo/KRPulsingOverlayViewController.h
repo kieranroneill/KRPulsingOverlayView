@@ -14,6 +14,8 @@
 
 #pragma mark - IBActions.
 
--(IBAction)onButtonPress:(id)sender;
+-(IBAction)onPulseButtonPress:(id)sender;
+
+-(IBAction)onPulseAlertButtonPress:(id)sender;
 
 @end
