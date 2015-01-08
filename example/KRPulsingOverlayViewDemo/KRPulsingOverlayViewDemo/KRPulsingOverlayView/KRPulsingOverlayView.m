@@ -37,8 +37,8 @@
         self.viewController = theViewController;
         
         // Set default values.
-        self.backgroundColour = [UIColor whiteColor];
-        self.pulseColor = [UIColor cyanColor];
+        self.backgroundColour = [UIColor cyanColor];
+        self.pulseColor = [UIColor magentaColor];
         self.pulseDiameter = 30.0f;
         self.pulseInterval = 0.16f;
         
