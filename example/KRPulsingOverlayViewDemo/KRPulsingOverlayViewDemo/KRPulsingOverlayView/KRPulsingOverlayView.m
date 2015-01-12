@@ -130,9 +130,8 @@
         
         CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
         
-        scaleAnimation.duration = opactityAnimation.duration = 0.5;
-        scaleAnimation.repeatCount = opactityAnimation.repeatCount = HUGE_VAL;
-        
+        scaleAnimation.duration = 0.5;
+        scaleAnimation.repeatCount = HUGE_VAL;
         scaleAnimation.autoreverses = YES;
         scaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
         scaleAnimation.toValue = [NSNumber numberWithFloat:0.0];
