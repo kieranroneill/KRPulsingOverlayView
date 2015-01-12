@@ -129,7 +129,6 @@
         [self.pulseContainerView addSubview:pulseView];
         
         CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-        CABasicAnimation *opactityAnimation = [CABasicAnimation animationWithKeyPath:@"opacity"];
         
         scaleAnimation.duration = opactityAnimation.duration = 0.5;
         scaleAnimation.repeatCount = opactityAnimation.repeatCount = HUGE_VAL;
@@ -137,22 +136,17 @@
         scaleAnimation.autoreverses = YES;
         scaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
         scaleAnimation.toValue = [NSNumber numberWithFloat:0.0];
-    
-        opactityAnimation.fromValue = [NSNumber numberWithFloat:0.6];
-        opactityAnimation.toValue = [NSNumber numberWithFloat:1.0];
         
         // Add animations, customise for different positions.
         if(i == 0)
         {
             [pulseView.layer addAnimation:scaleAnimation forKey:@"scale"];
-            [pulseView.layer addAnimation:opactityAnimation forKey:@"opacity"];
         }
         else
         {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, self.pulseInterval * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void)
             {
                 [pulseView.layer addAnimation:scaleAnimation forKey:@"scale"];
-                [pulseView.layer addAnimation:opactityAnimation forKey:@"opacity"];
             });
             
             // Increase pulse interval for next pulse.
